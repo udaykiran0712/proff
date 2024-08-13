@@ -5,7 +5,7 @@ import FeedsGrid from '../components/FeedsGrid';
 import { feeds } from '../mockData'; 
 import { ImageBackground } from 'react-native';
 
-const PersonalScreen = ({ navigation }) => {
+const Personal = ({ navigation }) => {
   const [colors, setColors] = useState({ background: '#fff', primary: '#000', secondary: '#000', detail: '#000' });
   const [isFollowing, setIsFollowing] = useState(false);
   useEffect(() => {
@@ -107,4 +107,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PersonalScreen;
+export default Personal;

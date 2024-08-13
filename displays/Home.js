@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import { View, StyleSheet } from 'react-native';
-import PersonalScreen from './PersonalScreen';
-import ProfessionalScreen from './ProfessionalScreen';
-import CompanyScreen from './CompanyScreen';
+import Personal from './Personal';
+import Professional from './Professional';
+import Company from './Comapany';
 import TopTabs from '../components/TopTabs';
 
-const HomeScreen = ({ navigation }) => {
+const Home = ({ navigation }) => {
   const [selectedTab, setSelectedTab] = useState('Personal');
   const renderScreen = () => {
     switch (selectedTab) {
       case 'Personal':
-        return <PersonalScreen navigation={navigation} />;
+        return <Personal navigation={navigation} />;
       case 'Professional':
-        return <ProfessionalScreen />;
+        return <Professional />;
       case 'Company':
-        return <CompanyScreen/>;
+        return <Company/>;
       default:
-        return <PersonalScreen navigation={navigation} />;
+        return <Personal navigation={navigation} />;
     }
   };
   return (
@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
+export default Home;

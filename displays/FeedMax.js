@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Image, Text, ScrollView, StyleSheet } from 'react-native';
 
-const FeedDetail = ({ route }) => {
+const FeedMax = ({ route }) => {
   const { imageurl, description } = route.params;
 
   return (
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default FeedDetail;
+export default FeedMax;

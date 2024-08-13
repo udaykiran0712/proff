@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const CompanyScreen = () => {
+const Professional = () => {
   const [displayText, setDisplayText] = useState('');
-  const fullText = "You have Entered to your Company Screen Content";
+  const fullText = "You have Entered to your Professional Screen Content";
   const typingSpeed = 60; 
   useEffect(() => {
     let currentIndex = 0;
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',     
   },
   textContainer: {
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', 
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
     padding: 10,
     borderRadius: 10,
   },
@@ -43,4 +43,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default CompanyScreen;
+export default Professional;
